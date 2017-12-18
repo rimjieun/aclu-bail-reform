@@ -154,3 +154,16 @@ for booking in unreleased:
 unreleased_file.close()
 
 driver.close()
+
+def binarySearch(data, date):
+  mid = (len(data))/2
+
+  inmate_id_range = []
+
+  if not len(data):
+    raise 'Error'
+  if date == data[mid]:
+    for i in range(mid, 0, -1):
+      print(data[i])
+      if data[i] != data[mid]:
+        inmate_id_range[0] = data[i+1]['inmate_id']

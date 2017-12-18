@@ -50,7 +50,7 @@ except FileNotFoundError:
 
     csv_writer.writeheader()
 
-    current_record = 1700000
+    current_record = 1721800 
     insert_to_csv(current_record)
 
     
